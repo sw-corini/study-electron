@@ -9,7 +9,8 @@ function onClosed() {
 function createWindow() {
 	mainWindow = new BrowserWindow({
 		width: 900,
-		height: 550
+		height: 550,
+		icon: __dirname + '/build/icon.icns'
 	});
 
 	mainWindow.loadURL(`file://${__dirname}/index.html`);

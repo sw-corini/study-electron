@@ -78,7 +78,7 @@ body {
 #list {
 	display: grid;
 	grid-gap: 1.5em;
-	grid-template-columns: repeat(auto-fill, minmax(180px, 230px));
+	grid-template-columns: repeat(auto-fill, 200px);
 }
 
 #dateHeader {
