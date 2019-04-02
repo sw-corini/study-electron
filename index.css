@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR:300,500|Rubik:300,500');
+
+body,
+html {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: 'Rubik', 'Noto Sans KR', sans-serif;
+}
+#wrapper {
+	width: 100%;
+	height: 100%;
+}
+
+#loader {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	z-index: 2;
+	color: #999;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+#loader i {
+	font-size: 1.5em;
+	color: #fff;
+}
+
+#listWrap {
+	box-sizing: border-box;
+	display: flex;
+	flex-direction: column;
+}
+
+#listHeader {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 1em;
+	padding: 0 2em;
+	height: 69px;
+	font-weight: 300;
+	font-size: 0.875em;
+	align-items: center;
+	border-bottom: 1px rgba(0, 0, 0, 0.05) solid;
+	background-color: #f9f9f9;
+}
+
+#totalCount {
+	color: #888;
+	letter-spacing: -0.5px;
+}
+#totalCount .title {
+	font-weight: 500;
+	font-size: 1.1em;
+}
+
+#totalCount .count {
+	font-weight: 500;
+	margin-left: 0.5em;
+}
+#lastUpdate {
+	color: #999;
+	font-size: 0.875em;
+	text-align: right;
+}
+
+#dateMovieBox {
+	margin: 0 2em 2em;
+}
+
+#list {
+	display: grid;
+	grid-gap: 1.5em;
+	grid-template-columns: repeat(auto-fill, minmax(180px, 230px));
+}
+
+#dateHeader {
+	font-size: 1.4em;
+	font-weight: 500;
+	margin: 1em 0;
+	color: #3d3d3d;
+}
+#dateHeader span {
+	margin-left: 0.5em;
+}
+
+.cardBox {
+	width: 100%;
+	background: #fff;
+	overflow: hidden;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	font-weight: 400;
+}
+
+.posterWrap {
+	width: 100%;
+	height: auto;
+}
+
+.posterWrap img {
+	display: block;
+	width: 100%;
+}
+
+.infoWrap {
+	box-sizing: border-box;
+	display: flex;
+	flex-direction: column;
+}
+
+.posterImage {
+	display: block;
+	width: 100%;
+	max-width: 100%;
+	cursor: pointer;
+}
+.posterImage img {
+	display: block;
+}
+
+.titleWrap {
+	color: #222;
+	font-size: 0.875em;
+	letter-spacing: -0.5px;
+	margin: 5px 0;
+	cursor: pointer;
+}
+
+.ageCircle {
+	display: inline-block;
+	color: #fff;
+	border-radius: 100%;
+	font-weight: 500;
+	font-size: 0.75em;
+	width: 20px;
+	line-height: 20px;
+	text-align: center;
+	float: left;
+	margin-right: 5px;
+}
+
+.releaseDate {
+	font-weight: 600;
+}
+
+.director {
+	font-size: 0.75em;
+}
+.director span {
+}
+.genre {
+	font-size: 0.75em;
+}
+.genre span {
+}
+
+.boxWrap {
+	flex: 2;
+}
+
+.ageAll {
+	background-color: #3ae374;
+}
+.agePG {
+	background-color: #3ae374;
+}
+.age15 {
+	background-color: #17c0eb;
+}
+.age19 {
+	background-color: #ff3838;
+}
+.ageR {
+	background-color: #ff3838;
+}
+.age12 {
+	background-color: #ff9f1a;
+}
