@@ -1,0 +1,17 @@
+{
+	"name": "study-electron",
+	"version": "1.0.0",
+	"main": "index.js",
+	"license": "MIT",
+	"scripts": {
+		"start": "electron .",
+		"build": "electron-packager . --out=dist --asar --overwrite --all",
+		"build:darwin": "electron-packager . --out=dist --asar --overwrite --platform=darwin --arch=x64"
+	},
+	"dependencies": {
+		"electron": "^4.1.3"
+	},
+	"devDependencies": {
+		"electron-packager": "^13.1.1"
+	}
+}
