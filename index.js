@@ -7,6 +7,8 @@ function onClosed() {
 }
 
 function createWindow() {
+	app.setAppUserModelId('co.corini.coci');
+
 	mainWindow = new BrowserWindow({
 		width: 900,
 		height: 550,
@@ -15,6 +17,9 @@ function createWindow() {
 
 	mainWindow.loadURL(`file://${__dirname}/index.html`);
 	mainWindow.on('closed', onClosed);
+
+	// Open the DevTools.
+	// mainWindow.webContents.openDevTools();
 }
 
 app.on('window-all-closed', () => {

@@ -3,9 +3,12 @@
 	"version": "1.0.0",
 	"main": "index.js",
 	"license": "MIT",
+	"build": {
+		"appId": "co.corini.coci"
+	},
 	"scripts": {
 		"start": "electron .",
-		"build": "electron-packager . --out=dist --asar --overwrite --all",
+		"build": "electron-packager . --out=dist2 --asar --overwrite --all",
 		"build:darwin": "electron-packager . --out=dist --asar --overwrite --platform=darwin --arch=x64",
 		"pack": "electron-builder --dir",
 		"dist": "electron-builder"
@@ -13,5 +16,11 @@
 	"devDependencies": {
 		"electron-builder": "^20.39.0",
 		"electron-packager": "^13.1.1"
+	},
+	"dependencies": {
+		"amcharts3": "^3.21.14",
+		"ammap3": "^3.21.14",
+		"amstock3": "^3.21.14",
+		"menubar": "^5.2.3"
 	}
 }
