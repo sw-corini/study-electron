@@ -9,12 +9,15 @@
     <title>개봉 예정 영화</title>
 </head>
 <body>
+    <div id="event-noti">여기를 눌러 알림 실행</div>
     <div id="wrapper">
         <div id="loader">
             <i class="fas fa-spinner fa-spin"></i>
         </div>
     </div>
     <script>
+        require('./notification.js');
+
         // You can also require other files to run in this process
         require('./renderer.js');
     </script>

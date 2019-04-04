@@ -22,8 +22,8 @@ const template = [
 				label: 'Menu1',
 				click: function() {
 					onPrefsClicked1();
-				},
-				accelerator: process.platform === 'darwin' ? 'Alt+Command+I' : 'Ctrl+Shift+I'
+				}
+				// accelerator: process.platform === 'darwin' ? 'Alt+Command+I' : 'Ctrl+Shift+I'
 			}
 		]
 	},
